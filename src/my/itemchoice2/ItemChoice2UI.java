@@ -33,6 +33,12 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         buttonGroup5 = new javax.swing.ButtonGroup();
         buttonGroup6 = new javax.swing.ButtonGroup();
         buttonGroup7 = new javax.swing.ButtonGroup();
+        jLayeredPane5 = new javax.swing.JLayeredPane();
+        jButton3 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -52,6 +58,10 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jLayeredPane2 = new javax.swing.JLayeredPane();
         jPanel3 = new javax.swing.JPanel();
@@ -62,6 +72,10 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
         jToggleButton9 = new javax.swing.JToggleButton();
         jToggleButton10 = new javax.swing.JToggleButton();
         jToggleButton11 = new javax.swing.JToggleButton();
@@ -72,10 +86,80 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
+        jButton3.setText("Play");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Let's play Sustainable Home Shop!");
+
+        jLayeredPane5.setLayer(jButton3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane5.setLayer(jLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane5Layout = new javax.swing.GroupLayout(jLayeredPane5);
+        jLayeredPane5.setLayout(jLayeredPane5Layout);
+        jLayeredPane5Layout.setHorizontalGroup(
+            jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane5Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(119, 119, 119))
+            .addGroup(jLayeredPane5Layout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jLabel11)
+                .addContainerGap(287, Short.MAX_VALUE))
+        );
+        jLayeredPane5Layout.setVerticalGroup(
+            jLayeredPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane5Layout.createSequentialGroup()
+                .addContainerGap(119, Short.MAX_VALUE)
+                .addComponent(jLabel11)
+                .addGap(45, 45, 45)
+                .addComponent(jButton3)
+                .addGap(144, 144, 144))
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(850, 2000));
+
+        jLabel12.setText("Let's play Sustainable Home Shop!");
+
+        jButton4.setText("Play");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
+        jPanel9.setLayout(jPanel9Layout);
+        jPanel9Layout.setHorizontalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addContainerGap(382, Short.MAX_VALUE)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                        .addComponent(jLabel12)
+                        .addGap(358, 358, 358))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                        .addComponent(jButton4)
+                        .addGap(416, 416, 416))))
+        );
+        jPanel9Layout.setVerticalGroup(
+            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel9Layout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(jLabel12)
+                .addGap(33, 33, 33)
+                .addComponent(jButton4)
+                .addContainerGap(92, Short.MAX_VALUE))
+        );
 
         jTextField1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextField1.setText("0");
+        jTextField1.setVisible(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -84,6 +168,10 @@ public class ItemChoice2UI extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Coins");
+        jLabel4.setVisible(false);
+
+        jPanel4.setVisible(false);
+        jPanel4.setEnabled(false);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/itemchoice2/homesetup2.png"))); // NOI18N
 
@@ -231,6 +319,19 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jTextField2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextField2.setText("0");
 
+        jTextField4.setText("0");
+
+        jTextField3.setText("0");
+
+        jTextField5.setText("0");
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+
+        jTextField6.setText("0");
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -240,38 +341,47 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jButton1)
-                                .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jButton1)
+                                        .addComponent(jLabel5))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(9, 9, 9)))
+                                .addGap(185, 185, 185))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addComponent(jToggleButton3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jToggleButton4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5))
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(9, 9, 9)))
-                        .addGap(185, 185, 185))
-                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGap(33, 33, 33)
-                            .addComponent(jToggleButton1)
-                            .addGap(36, 36, 36)
-                            .addComponent(jToggleButton2)
-                            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jToggleButton5)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jToggleButton6))
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jToggleButton3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jToggleButton4))
-                                .addGroup(jPanel4Layout.createSequentialGroup()
-                                    .addComponent(jToggleButton7)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jToggleButton8)))
-                            .addGap(82, 82, 82)))))
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jToggleButton5)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jToggleButton6)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel4Layout.createSequentialGroup()
+                                        .addComponent(jToggleButton7)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jToggleButton8)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap())))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
+                        .addComponent(jToggleButton1)
+                        .addGap(36, 36, 36)
+                        .addComponent(jToggleButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -282,19 +392,29 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jToggleButton1)
-                            .addComponent(jToggleButton2))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jToggleButton4)
-                            .addComponent(jToggleButton3))
+                            .addComponent(jToggleButton2)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(17, 17, 17)
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jToggleButton4)
+                                    .addComponent(jToggleButton3)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jToggleButton5)
-                            .addComponent(jToggleButton6))
+                            .addComponent(jToggleButton6)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jToggleButton7)
-                            .addComponent(jToggleButton8))
+                            .addComponent(jToggleButton8)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(68, 68, 68)
                         .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -309,7 +429,7 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jPanel5.setEnabled(false);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel9.setText("Well done on earning coins!  Now spend them!");
+        jLabel9.setText("Now spend your earned coins on gifts!");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -358,9 +478,59 @@ public class ItemChoice2UI extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/itemchoice2/homesetup2.png"))); // NOI18N
 
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.setOpaque(false);
+
+        jLabel13.setText("Skateboard");
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addContainerGap(24, Short.MAX_VALUE))
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(44, Short.MAX_VALUE)
+                .addComponent(jLabel13)
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+
+        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel11.setOpaque(false);
+
+        jLabel14.setText("SignedTShirt");
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 163, Short.MAX_VALUE)
+            .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel11Layout.createSequentialGroup()
+                    .addGap(28, 28, 28)
+                    .addComponent(jLabel14)
+                    .addContainerGap(69, Short.MAX_VALUE)))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 144, Short.MAX_VALUE)
+            .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel11Layout.createSequentialGroup()
+                    .addGap(42, 42, 42)
+                    .addComponent(jLabel14)
+                    .addContainerGap(86, Short.MAX_VALUE)))
+        );
+
         jLayeredPane4.setLayer(jPanel8, javax.swing.JLayeredPane.MODAL_LAYER);
         jLayeredPane4.setLayer(jPanel6, javax.swing.JLayeredPane.MODAL_LAYER);
         jLayeredPane4.setLayer(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane4.setLayer(jPanel10, javax.swing.JLayeredPane.MODAL_LAYER);
+        jLayeredPane4.setLayer(jPanel11, javax.swing.JLayeredPane.MODAL_LAYER);
 
         javax.swing.GroupLayout jLayeredPane4Layout = new javax.swing.GroupLayout(jLayeredPane4);
         jLayeredPane4.setLayout(jLayeredPane4Layout);
@@ -369,7 +539,13 @@ public class ItemChoice2UI extends javax.swing.JFrame {
             .addGroup(jLayeredPane4Layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(278, Short.MAX_VALUE))
+                .addGap(148, 148, 148)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(89, 89, 89))
+            .addGroup(jLayeredPane4Layout.createSequentialGroup()
+                .addGap(246, 246, 246)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane4Layout.createSequentialGroup()
                     .addGap(21, 21, 21)
@@ -383,10 +559,17 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         );
         jLayeredPane4Layout.setVerticalGroup(
             jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane4Layout.createSequentialGroup()
-                .addContainerGap(255, Short.MAX_VALUE)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
+            .addGroup(jLayeredPane4Layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addGroup(jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane4Layout.createSequentialGroup()
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane4Layout.createSequentialGroup()
+                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(66, 66, 66))))
             .addGroup(jLayeredPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPane4Layout.createSequentialGroup()
                     .addGap(26, 26, 26)
@@ -399,21 +582,20 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jToggleButton9.setText("jTB9");
+        jToggleButton9.setLabel("SignedTShirt");
         jToggleButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton9ActionPerformed(evt);
             }
         });
 
-        jToggleButton10.setText("jTB10");
+        jToggleButton10.setLabel("Skateboard");
         jToggleButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton10ActionPerformed(evt);
             }
         });
 
-        buttonGroup5.add(jToggleButton11);
         jToggleButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/my/itemchoice2/cat2_icon.png"))); // NOI18N
         jToggleButton11.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -459,12 +641,12 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                                .addGap(0, 547, Short.MAX_VALUE)
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jButton2)))
-                        .addGap(0, 144, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jLayeredPane2Layout.createSequentialGroup()
                         .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(98, 98, 98)
+                        .addGap(45, 45, 45)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jLayeredPane2Layout.createSequentialGroup()
                                 .addComponent(jToggleButton9)
@@ -482,24 +664,24 @@ public class ItemChoice2UI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
                 .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jLayeredPane2Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(83, Short.MAX_VALUE)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jToggleButton12)
                             .addComponent(jToggleButton11))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                         .addGroup(jLayeredPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jToggleButton9)
                             .addComponent(jToggleButton10))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 27, Short.MAX_VALUE)
                         .addComponent(jButton2))
                     .addGroup(jLayeredPane2Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(238, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane2Layout.createSequentialGroup()
-                .addGap(0, 69, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLayeredPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -516,7 +698,7 @@ public class ItemChoice2UI extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         jPanel2.setVisible(false);
@@ -534,21 +716,22 @@ public class ItemChoice2UI extends javax.swing.JFrame {
         jLayeredPane3.setLayout(jLayeredPane3Layout);
         jLayeredPane3Layout.setHorizontalGroup(
             jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(37, 37, 37))
             .addGroup(jLayeredPane3Layout.createSequentialGroup()
-                .addGap(241, 241, 241)
-                .addComponent(jLabel3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel3))
+                    .addGroup(jLayeredPane3Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)))
+                .addGap(655, 655, 655))
         );
         jLayeredPane3Layout.setVerticalGroup(
             jLayeredPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane3Layout.createSequentialGroup()
                 .addContainerGap(10, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addGap(58, 58, 58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(jLabel3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -559,8 +742,8 @@ public class ItemChoice2UI extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 552, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -587,21 +770,23 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(4, 4, 4)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -614,210 +799,184 @@ public class ItemChoice2UI extends javax.swing.JFrame {
     }//GEN-LAST:event_jToggleButton1StateChanged
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
-    float num1 = Float.parseFloat(jTextField1.getText());
-        if (jToggleButton1.isSelected()) {
-            num1 = num1 + 100;
-            baskettotal++;
 
-            jTextField1.setText(String.valueOf(num1));
+    float num1 = Float.parseFloat(jTextField1.getText());
+    float num2 = Float.parseFloat(jTextField3.getText());
+        if (jToggleButton1.isSelected()) {
+            
+            num1 = num1 + 100;
+
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton1.setEnabled(false);
             jToggleButton2.setEnabled(true);
-            jTextField2.setText(String.valueOf(baskettotal));
-                       
+             num2 = 1;
+             jTextField3.setText(String.format("%.0f", num2)); 
+                         
         } else {
-        baskettotal--;
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
 
-        } 
+            jTextField1.setText(String.format("%.0f",num1));
+        }
+            float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal));    
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void jToggleButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton2ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
+
     float num1 = Float.parseFloat(jTextField1.getText());
-        
+    float num2 = Float.parseFloat(jTextField3.getText()); 
+    
         if (jToggleButton2.isSelected()) {
-        baskettotal++;
         if(num1 == 0) {
                 num1 = 0;
             } else {
                 num1 = num1 - 100;
             }
-            // If the button is selected, add a value to the text field value
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
-            jToggleButton2.setEnabled(false);
+
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton1.setEnabled(true);
+            jToggleButton2.setEnabled(false);
+            
+            num2 = 1;
+            jTextField3.setText(String.format("%.0f", num2));
 
         } else {
         //float num1;
         //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
-
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
-            
+            jTextField1.setText(String.format("%.0f",num1));
+          
         }
+              float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton2ActionPerformed
 
     private void jToggleButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton3ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
+
     float num1 = Float.parseFloat(jTextField1.getText());
-        
+    float num2 = Float.parseFloat(jTextField4.getText());     
         if (jToggleButton3.isSelected()) {
-            // We have to parse the text to a type float.
         //float num1;
         //num1 = Float.parseFloat(jTextField1.getText());
-
         num1 = num1 + 100;
-        baskettotal++;
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton3.setEnabled(false);
-            jToggleButton4.setEnabled(true);
+            jToggleButton4.setEnabled(true);            
+            num2 = 1;
+            jTextField4.setText(String.format("%.0f", num2));
         } else {
         //float num1;
         //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
-
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
-         } 
+        jTextField1.setText(String.format("%.0f",num1));
+           
+         }
+          float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton3ActionPerformed
 
     private void jToggleButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton4ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
+
     float num1 = Float.parseFloat(jTextField1.getText());
-        
+    float num2 = Float.parseFloat(jTextField4.getText());     
         if (jToggleButton4.isSelected()) {
-
-        //float num1;
-
-        //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal++;
         if(num1 == 0) {
                 num1 = 0;
             } else {
                 num1 = num1 - 100;
             }
 
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton4.setEnabled(false);
             jToggleButton3.setEnabled(true);
+            num2 = 1;
+            jTextField4.setText(String.format("%.0f", num2));
         } else {
-        //float num1;
-        
-        //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
-
-        jTextField1.setText(String.valueOf(num1));
-        jTextField2.setText(String.valueOf(baskettotal));
+        jTextField1.setText(String.format("%.0f",num1));
         }
+            float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton4ActionPerformed
 
     private void jToggleButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton5ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
-    float num1 = Float.parseFloat(jTextField1.getText());
-        
-        if (jToggleButton5.isSelected()) {
-            
-        //float num1;
-      
-        //num1 = Float.parseFloat(jTextField1.getText());
-        //baskettotal = Float.parseFloat(jTextField2.getText());
-            num1 = num1 + 100;
-            baskettotal++;
 
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+    float num1 = Float.parseFloat(jTextField1.getText());
+    float num2 = Float.parseFloat(jTextField5.getText());     
+        if (jToggleButton5.isSelected()) {
+
+            num1 = num1 + 100;
+
+            jTextField1.setText(String.format("%.0f",num1));
+
             jToggleButton5.setEnabled(false);
             jToggleButton6.setEnabled(true);
+            num2 = 1;
+            jTextField5.setText(String.format("%.0f", num2));
         } else {
-        //float num1;
 
-        //num1 = Float.parseFloat(jTextField1.getText());
+            jTextField1.setText(String.format("%.0f",num1));
 
-        baskettotal--;
-
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
         }
+            float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton5ActionPerformed
 
     private void jToggleButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton6ActionPerformed
-            float baskettotal = Float.parseFloat(jTextField2.getText());
+    
+
     float num1 = Float.parseFloat(jTextField1.getText());
-
+    float num2 = Float.parseFloat(jTextField5.getText()); 
         if (jToggleButton6.isSelected()) {
-
-        //float num1;
-
-        //num1 = Float.parseFloat(jTextField1.getText());
-
         if(num1 == 0) {
                 num1 = 0;
             } else {
                 num1 = num1 - 100;
             }
 
-            baskettotal++;
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton6.setEnabled(false);
             jToggleButton5.setEnabled(true);
+            num2 = 1;
+            jTextField5.setText(String.format("%.0f", num2));
         } else {
-        //float num1;
+        jTextField1.setText(String.format("%.0f",num1));
 
-        //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
- 
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
-}        
+            }     
+            float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+            jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton6ActionPerformed
 
     private void jToggleButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton7ActionPerformed
-    float baskettotal = Float.parseFloat(jTextField2.getText());
     float num1 = Float.parseFloat(jTextField1.getText());
+    float num2 = Float.parseFloat(jTextField6.getText());
         if (jToggleButton7.isSelected()) {
-
-        //float num1;
-
-        //num1 = Float.parseFloat(jTextField1.getText());
-
             num1 = num1 + 100;
-            baskettotal++;
 
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+            jTextField1.setText(String.format("%.0f",num1));
             jToggleButton7.setEnabled(false);
             jToggleButton8.setEnabled(true);
+            num2 = 1;
+            jTextField6.setText(String.format("%.0f", num2));
         } else {
-        //float num1;
-
-        //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
-
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
-        }
+            jTextField1.setText(String.format("%.0f",num1));
+         }
+            float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton7ActionPerformed
 
     private void jToggleButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton8ActionPerformed
-      float baskettotal = Float.parseFloat(jTextField2.getText());
+    //float baskettotal = Float.parseFloat(jTextField2.getText());
+    
     float num1 = Float.parseFloat(jTextField1.getText());
+    float num2 = Float.parseFloat(jTextField6.getText());
         if (jToggleButton8.isSelected()) {
 
-        //float num1;
-   
+        //float num1;   
         //num1 = Float.parseFloat(jTextField1.getText());
 
         if(num1 == 0) {
@@ -826,29 +985,60 @@ public class ItemChoice2UI extends javax.swing.JFrame {
                 num1 = num1 - 100;
             }
 
-            baskettotal++;
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+            jTextField1.setText(String.format("%.0f",num1));
+            //jTextField1.setText(String.valueOf(num1));
             jToggleButton8.setEnabled(false);
             jToggleButton7.setEnabled(true);
+            num2 = 1;
+            jTextField6.setText(String.format("%.0f", num2));
         } else {
-        //float num1;
-   
+        //float num1;   
         //num1 = Float.parseFloat(jTextField1.getText());
-
-        baskettotal--;
-
-            jTextField1.setText(String.valueOf(num1));
-            jTextField2.setText(String.valueOf(baskettotal));
+            jTextField1.setText(String.format("%.0f",num1));          
       } 
+      float baskettotal = Float.parseFloat(jTextField3.getText()) + Float.parseFloat(jTextField4.getText()) +
+            Float.parseFloat(jTextField5.getText()) + Float.parseFloat(jTextField6.getText()); 
+      jTextField2.setText(String.format("%.0f", baskettotal)); 
     }//GEN-LAST:event_jToggleButton8ActionPerformed
 
     private void jToggleButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton9ActionPerformed
-        // TODO add your handling code here:
+              float num1 = Float.parseFloat(jTextField1.getText());  
+
+        if (jToggleButton9.isSelected()) {            
+            if(num1 == 0) {
+                num1 = 0;
+            } else {
+                num1 = num1 - 100;
+            }                                
+            jPanel11.setVisible(true);
+            jTextField1.setText(String.format("%.0f",num1));            
+
+        } else { 
+            jPanel11.setVisible(false);
+            jTextField1.setText(String.format("%.0f", num1));
+            
+           } 
     }//GEN-LAST:event_jToggleButton9ActionPerformed
 
     private void jToggleButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton10ActionPerformed
-        // TODO add your handling code here:
+float num1 = Float.parseFloat(jTextField1.getText()); 
+
+        if (jToggleButton10.isSelected()) {            
+            if(num1 == 0) {
+                num1 = 0;
+            } else {
+                num1 = num1 - 100;
+            }                                
+            jPanel10.setVisible(true);
+            jTextField1.setText(String.format("%.0f",num1));
+
+        } else {                
+            jPanel10.setVisible(false);
+            jTextField1.setText(String.format("%.0f", num1));
+
+        } 
+        
+        
     }//GEN-LAST:event_jToggleButton10ActionPerformed
 
     private void jToggleButton11StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jToggleButton11StateChanged
@@ -857,58 +1047,39 @@ public class ItemChoice2UI extends javax.swing.JFrame {
 
     private void jToggleButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton11ActionPerformed
 
-        float num1 = Float.parseFloat(jTextField1.getText());
-        
-        if (jToggleButton11.isSelected()) {
-            jPanel6.setVisible(true);
-            jPanel8.setVisible(false);
-            
+        float num1 = Float.parseFloat(jTextField1.getText());  
+
+        if (jToggleButton11.isSelected()) {            
             if(num1 == 0) {
                 num1 = 0;
             } else {
                 num1 = num1 - 100;
-            }
-                                
-            jTextField1.setText(String.valueOf(num1));
+            }                                
+            jTextField1.setText(String.format("%.0f",num1));
+            jPanel6.setVisible(true); 
 
-            
-            jToggleButton11.setEnabled(false);
-            jToggleButton12.setEnabled(true);
-                          
-        } else {
-
-                
-            jTextField1.setText(String.valueOf(num1));
+        } else {                
+            jTextField1.setText(String.format("%.0f", num1));
             jPanel6.setVisible(false);
-            jPanel8.setVisible(true);
+            //jPanel8.setVisible(true);
 
         } 
+        
     }//GEN-LAST:event_jToggleButton11ActionPerformed
 
     private void jToggleButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton12ActionPerformed
 
-        float num1 = Float.parseFloat(jTextField1.getText());
-        
+        float num1 = Float.parseFloat(jTextField1.getText());        
         if (jToggleButton12.isSelected()) {
-            jPanel6.setVisible(false);
-            jPanel8.setVisible(true);
-
         if(num1 == 0) {
                 num1 = 0;
             } else {
                 num1 = num1 - 100;
             }
-
-            jTextField1.setText(String.valueOf(num1));
- 
-            jToggleButton11.setEnabled(true);
-            jToggleButton12.setEnabled(false);
-
+            jTextField1.setText(String.format("%.0f",num1));
+            jPanel8.setVisible(true);
         } else {
-
-            jTextField1.setText(String.valueOf(num1));
- 
-            jPanel6.setVisible(true);
+            jTextField1.setText(String.format("%.0f",num1));
             jPanel8.setVisible(false);
         }       
     }//GEN-LAST:event_jToggleButton12ActionPerformed
@@ -929,6 +1100,7 @@ public class ItemChoice2UI extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 jLabel4.setVisible(false);
 jTextField1.setEnabled(false);
+jTextField1.setVisible(false);
 jPanel4.setVisible(false);
 jPanel4.setEnabled(false);
 jPanel5.setVisible(false);
@@ -943,6 +1115,30 @@ jPanel2.setEnabled(true);
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+jLayeredPane5.setVisible(false); 
+jLayeredPane5.setEnabled(false); 
+jPanel4.setVisible(true); 
+jPanel4.setEnabled(true); 
+// TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        jPanel4.setVisible(true);
+        jPanel4.setEnabled(true);
+        jTextField1.setVisible(true);
+        jLabel4.setVisible(true);
+        jLabel4.setEnabled(true);
+        
+        
+        jPanel9.setVisible(false);
+        jPanel9.setEnabled(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -989,8 +1185,14 @@ jPanel2.setEnabled(true);
     private javax.swing.ButtonGroup buttonGroup7;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1003,7 +1205,10 @@ jPanel2.setEnabled(true);
     private javax.swing.JLayeredPane jLayeredPane2;
     private javax.swing.JLayeredPane jLayeredPane3;
     private javax.swing.JLayeredPane jLayeredPane4;
+    private javax.swing.JLayeredPane jLayeredPane5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1011,8 +1216,13 @@ jPanel2.setEnabled(true);
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton10;
     private javax.swing.JToggleButton jToggleButton11;
